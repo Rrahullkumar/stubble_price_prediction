@@ -84,7 +84,7 @@ with col2:
     transport_cost = st.number_input("Transport Cost", min_value=0.0, max_value=10000.0, value=1000.0, step=100.0, help="Transportation cost")
 
 # Predict button with animation
-if st.button("🚀 Predict Price", key="predict-btn"):
+if st.button("Predict Price", key="predict-btn"):
     # Encode the categorical inputs
     parali_type_encoded = 0 if parali_type == "Rice" else 1
     industry_type_encoded = ["Paper", "Fertilizer", "Biofuel", "Energy"].index(industry_type)
